@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Aula 08 - Objetos</h1>
+    <div id="saida"></div>
+
+    <script>
+        const saida = document.getElementById('saida');
+
+        const pessoa = {
+            nome: "Ricardo",
+            idade: 17,
+            apresentar: function() { return `Sou ${this.nome}, ${this.idade} anos.`; }
+        };
+
+        const loja = {
+            "Placa de Vídeo": 3500,
+            "Processador": 1800,
+            "Memória RAM": 400
+        };
+
+        let html = `<h3>${pessoa.apresentar()}</h3>`;
+        html += `<h4>Estoque da Loja:</h4><ul>`;
+
+        for (let produto in loja) {
+            html += `<li>${produto}: R$ ${loja[produto]}</li>`;
+        }
+        
+        html += `</ul>`;
+        saida.innerHTML = html;
+    </script>
+</body>
+</html>

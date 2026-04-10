@@ -1,0 +1,20 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100vh;
+
+    border: 2px solid red;
+}
+
+.card-image {
+    width: 40vh;
+    height: 40vh;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

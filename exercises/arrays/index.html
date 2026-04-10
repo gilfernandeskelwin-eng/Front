@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<body>
+    <h1>Arrays</h1>
+    <div id="resultado"></div>
+
+    <script>
+        const numeros = [10, 5, 8, 3, 12, 7];
+        const resDiv = document.getElementById('resultado');
+
+        const pares = numeros.filter(n => n % 2 === 0);
+        const quadrados = numeros.map(n => n * n);
+        const soma = numeros.reduce((t, n) => t + n, 0);
+        const ordenados = [...numeros].sort((a, b) => a - b);
+
+        resDiv.innerHTML = `
+            <p><strong>Números:</strong> ${numeros.join(', ')}</p>
+            <p><strong>Pares:</strong> ${pares.join(', ')}</p>
+            <p><strong>Quadrados:</strong> ${quadrados.join(', ')}</p>
+            <p><strong>Soma Total:</strong> ${soma}</p>
+            <p><strong>Ordem Crescente:</strong> ${ordenados.join(' -> ')}</p>
+        `;
+    </script>
+</body>
+</html>
+</body>
+</html>

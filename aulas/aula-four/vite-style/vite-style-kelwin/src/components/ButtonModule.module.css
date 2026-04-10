@@ -1,0 +1,14 @@
+.btn   {
+    background-color: #0feeee; /* Blue delicia */
+    border: none;
+    color: white;
+    border: 3px solid #0f95ee;
+}
+
+.destaque {
+    border: 3px solid #c38cf0;
+}
+
+.highlight {
+    border: 3px solid #f0e68c;
+}

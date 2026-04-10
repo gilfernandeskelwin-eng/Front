@@ -1,0 +1,39 @@
+.breadcrumb-container {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.breadcrumb-list li a {
+  text-decoration: none;
+  color: #646cff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.breadcrumb-list li a:hover {
+  color: #535bf2;
+  text-decoration: underline;
+}
+
+.breadcrumb-list li span {
+  color: #999;
+  user-select: none; 
+}
+
+.breadcrumb-list li.active {
+  color: #666;
+  font-weight: bold;
+}
